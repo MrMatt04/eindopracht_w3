@@ -4,14 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Webshop</title>
 </head>
 <body>
-    <div id="header"></div>
-    <div id="navigation"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
-    <div id="copy"></div>
+    <div id="header">
+        <form action="/action_page.php">
+            <label for="lang">Uw taal:</label>
+            <select id="lang" name="lang">
+                <option value="Nederlands">Nederlands</option>
+                <option value="English">English</option>
+            </select>
+        </form>
+        <div id="links">
+        <a href="">Mijn account</a> <a href="">Afrekken</a> <a href="">Inloggen</a>
+        </div>
+    </div>
+    <div id="navigation">
+        <img id="logo" src="assets/img/placeholder.png" alt="my logo :)">
+
+        <div>
+            <a href="">Home</a>
+            <a href="">Adventure</a>
+            <a href="">FPS</a>
+            <a href="">Horror</a>
+            <a href="">Singleplayer</a>
+        </div>
+        <div>
+            <button>search</button>
+            <button>vergelijk</button>
+            <Button>Winkelwagen</Button>
+        </div>
+
+    </div>
+    <div id="content">
+        <div id="doosjes">
+             <h1>Doosjes</h1>
+             <pre>subcatogory 1
+subcatogory 2
+subcatogory 3</pre>
+            </div>
+        <div id="selectie">
+            <h1>Selectie verfijnen</h1>
+            <pre>matriaal
+hout >
+metaal >
+plastic >
+                
+            </pre>
+        </div>
+        <div id="prijs">
+            <h1>Prijs</h1>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div id="recent">
+            <h1>Recent bekeken</h1>
+        </div>
+        <div id="nieuwsbrief"></div>
+        <h1>Nieuwsbrief</h1>
+        <input type="text" id="niewsbriefin" name="nieuwsin">
+        <div id="vergelijken">
+            <h1>Prijs vergelijken</h1>
+            <a href="">item 1</a>
+            <a href="">item 2</a>
+            <button>Vergelijken</button>
+            <a href="">rest</a>
+
+        </div>
+
+    
+
+    </div>
+    <div id="footer">meow</div>
+    <div id="copy">meow</div>
     
 </body>
 </html>

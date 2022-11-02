@@ -1,0 +1,30 @@
+#{
+    margin: 0px;
+    padding: 0px;
+}
+#header {
+    background-color: brown;
+    border: 3px black solid;
+    padding: 0.5%;
+    display: flex;
+    justify-content: space-between;
+}
+#links {
+    text-align: right;
+   
+}
+#navigation {
+    color: blueviolet;
+}
+#content {
+    background-color: lightblue;
+}
+#footer {
+    background-color: blanchedalmond;
+}
+#copy {
+    background-color: bisque;
+}
+#logo {
+    border-radius: 25%;
+}
