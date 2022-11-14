@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    
+    <div id="header">
+        <form action="/action_page.php">
+            <label for="lang">Uw taal:</label>
+            <select id="lang" name="lang">
+                <option value="Nederlands">Nederlands</option>
+                <option value="English">English</option>
+            </select>
+        </form>
+        <div id="links">
+        <a href="">Mijn account</a> <a href="">Afrekken</a> <a href="">Inloggen</a>
+        </div>
+    </div>
+    <div id="navigation">
+        <img id="logo" src="assets/img/placeholder.png" alt="my logo :)">
+
+        <div>
+            <a href="">Home</a>
+            <a href="">Adventure</a>
+            <a href="">FPS</a>
+            <a href="">Horror</a>
+            <a href="">Singleplayer</a>
+        </div>
+        <div>
+            <a href="index.html"><button>Home</button></a>
+            <button>vergelijk</button>
+            <Button>Winkelwagen</Button>
+        </div>
+
+    </div>
+<div id="main">
+    <div id="fotos">
+        <div id="bigimg">
+            <img id="featured" src="assets/img/500.png" alt="product">
+                <div id="friends">
+                    <img src="assets/img/500.png" alt="product" class="thumbnail active">
+                    <img src="assets/img/500.png" alt="product" class="thumbnail">
+                    <img src="assets/img/500.png" alt="product" class="thumbnail">
+                </div>
+
+            <script type="text/javascript">
+
+                let thumbnail = document.getElementsByClassName('thumbnail')
+
+                let activeImages = document.getElementsByClassName('active')
+
+                for (var i=0; i < thumbnail.length; i++){
+
+                    thumbnail[i].addEventListener('mouseover' , function(){
+                        console.log(activeImages)
+
+                        
+                    if (activeImages.length > 0){
+                        activeImages[0].classList.remove('active')
+                }
+
+                this.classList.add('active')
+                document.getElementById('featured').src = this.src
+            })
+        }
+
+            
+           
+
+            </script>
+        </div>
+    </div>
+    <div id="info">
+        <div id="nameprod"></div>
+        <div id="price"></div>
+        <button>Buy</button>
+
+
+    </div>
+    
+
+
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
