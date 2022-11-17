@@ -1,4 +1,4 @@
-#{
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -27,7 +27,9 @@
     width: 20%;
 }
 #footer {
-    background-color: blanchedalmond;
+    background-color: brown;
+    text-align: center;
+    border: 3px black solid;
 }
 #copy {
     background-color: bisque;
@@ -74,6 +76,7 @@
 
 @media screen and (max-width: 600px) {
 
+
 }
 #main {
     margin: 20px 0 0 0;
@@ -89,7 +92,7 @@
 }
 #info {
     width: 40%;
-    border: 1px black solid;
+    
 
 }
 #featured {
@@ -120,9 +123,12 @@
 .active {
     opacity: 1;
 }
-
 #friends {
     margin: 1% 0;
     display: flex;
     justify-content: space-evenly;
+}
+#bestelform {
+    margin: auto;
+    width: 700px;
 }

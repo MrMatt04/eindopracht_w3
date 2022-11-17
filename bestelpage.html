@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bestelpage</title>
+</head>
+<body>
+    <div id="header">
+        <form action="/action_page.php">
+            <label for="lang">Uw taal:</label>
+            <select id="lang" name="lang">
+                <option value="Nederlands">Nederlands</option>
+                <option value="English">English</option>
+            </select>
+        </form>
+        <div id="links">
+        <a href="">Mijn account</a> <a href="index.html">Home</a> <a href="">Inloggen</a>
+        </div>
+    </div>
+    <div id="navigation">
+        <img id="logo" src="assets/img/placeholder.png" alt="my logo :)">
+    </div>
+
+    <div id="bestelform">
+        <form action="thankyou.html" method="get">
+            <label for="fname">Name:</label><br>
+                <input type="text" id="fname" name="fname" value="voornaam">
+                <input type="text" id="tussen" name="tussen" value="tussen voegsel">
+                <input type="text" id="lname" name="lname" value="acthernaam"><br>
+            <label for="adress">Adress gegevens:</label><br>
+                <input type="text" id="adress" name="adress" value="Straat">
+                <input type="text" id="huisnummer" name="huisnummer" value="huisnummer">
+                <input type="text" id="postcode" name="postcode" value="postcode">
+                <input type="text" id="woonplaats" name="woonplaats" value="woonplaats"><br>
+            <label for="telefoon">Telefoon nummer:</label><br>
+                <input type="text" id="telefoon" name="telefoon" value="0612345678"><br>
+            <label for="email">Emailadress:</label><br>
+                <input type="text" id="email" name="email" value="you@example.com"><br>
+            <label for="email">Banking info:</label><br>
+                <input type="bankinfo" id="bankinfo" name="bankinfo" value="NL02ABNA0123456789"><br><br>
+                <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    
+    
+</body>
+</html>
